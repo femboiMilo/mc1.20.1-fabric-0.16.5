@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraft-peaceful",
+	"version": "Pre-Alpha 0.1",
+	"name": "Minecraft 'Peaceful'",
+	"description": "Minecraft 'Peaceful' - Experimental practice mod to learn java :3",
+	"authors": [
+		"femboiMilo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/minecraft-peaceful/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.milo.mcpeaceful.MinecraftPeaceful"
+		],
+		"client": [
+			"net.milo.mcpeaceful.MinecraftPeacefulClient"
+		],
+		"fabric-datagen": [
+			"net.milo.mcpeaceful.MinecraftPeacefulDataGenerator"
+		]
+	},
+	"mixins": [
+		"minecraft-peaceful.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
